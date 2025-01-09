@@ -1,0 +1,53 @@
+<div class="circle circle-top"><div></div></div>
+<div class="circle circle-bottom"><div></div></div>
+<div class="box"></div>
+<div class="arch"></div>
+<style>
+  body {
+    background: #fade8b;
+  }
+  div {
+    background: #61a74e;
+    position: fixed;
+  }
+  .circle {
+    width: 119px;
+    height: 119px;
+    border-radius: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-top {
+    right: 66px;
+    top: 15px;
+  }
+  .circle-bottom {
+    bottom: 16px;
+    left: 65px;
+  }
+  .circle div {
+    background: #fade8b;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+  }
+  .box {
+    width: 40px;
+    height: 155px;
+    top: 15px;
+    left: 105px;
+  }
+  .arch {
+    width: 250px;
+    aspect-ratio: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    mask: linear-gradient(#0000 0 0) content-box intersect,
+      conic-gradient(#000 90deg, #0000 0);
+    transform: rotate(90deg);
+    left: 45px;
+    bottom: 55px;
+  }
+</style>
