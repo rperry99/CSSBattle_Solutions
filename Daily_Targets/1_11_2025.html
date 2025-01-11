@@ -1,0 +1,38 @@
+<div class="arc a1"></div>
+<div class="arc a2"></div>
+<div class="box"></div>
+<style>
+  * {
+    background: #2f5a76;
+    margin: 0;
+  }
+
+  .arc {
+    background: #7ea6dd;
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    mask: linear-gradient(#0000 0 0) content-box intersect,
+      conic-gradient(#000 270deg, #0000 0);
+  }
+  .a1 {
+    transform: rotate(-90deg);
+    left: 140;
+    top: 40;
+  }
+  .a2 {
+    bottom: 40px;
+    left: 140;
+  }
+  .box {
+    background: #2f5a76;
+    width: 40px;
+    height: 120px;
+    position: fixed;
+    left: 135;
+    top: 90;
+  }
+</style>
